@@ -1,12 +1,12 @@
 
 ## PROBLEM STATEMENT
 
-In cloud computing environments, efficiently scheduling Virtual Machines (VMs) onto a limited number of servers is a critical and complex task. Given M VMs and N servers (where M >> N),
-VM-1=>N 
-VM-2=>N 
-VM-3=>N 
-.. 
-.. 
+In cloud computing environments, efficiently scheduling Virtual Machines (VMs) onto a limited number of servers is a critical and complex task. Given M VMs and N servers (where M >> N),\
+VM-1=>N\
+VM-2=>N\
+VM-3=>N\
+..\
+..\
 VM-M=>N
 
 the problem becomes exponentially complex, with a total of M^N possible configurations. This combinatorial nature renders VM scheduling an NP-hard problem, making it challenging to achieve optimal resource utilization.
