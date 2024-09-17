@@ -31,10 +31,10 @@ In this phase, the project focused on collecting and preprocessing the CPU usage
 - Feature engineering was performed by creating a "Next_CPU_Usage" column, shifting the data to model future predictions.
 
 3. Modeling:
-Three predictive models were applied to forecast the CPU usage:
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
+Three predictive models were cpmapred to forecast the CPU usage:
+- Linear Regression
+- Gated Recurrent Unit (GRU)
+- Bidirectional LSTM
 These models were trained on the preprocessed dataset and evaluated using metrics such as Mean Squared Error (MSE) and R-Squared (R2) score to gauge prediction accuracy.
 
 4. Results:
