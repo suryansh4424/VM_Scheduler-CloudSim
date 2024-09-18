@@ -48,7 +48,7 @@ Three predictive models were comapred to forecast the CPU usage:
 
 ---
 
-### 2. [**GRU (Gated Recurrent Unit)**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase1/Modeling/03_GRU%20Model.ipynb)
+### 2. [**GRU (Gated Recurrent Unit)**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase1/Modeling/02_GRU%20Model.ipynb)
 - **R² Score**: ~0.62
 - **Strengths**:
   - Captures temporal dependencies in time series data.
@@ -59,7 +59,7 @@ Three predictive models were comapred to forecast the CPU usage:
 
 ---
 
-### 3. [**Bidirectional LSTM**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase1/Modeling/02_Bidirectional%20LSTM.ipynb)
+### 3. [**Bidirectional LSTM**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase1/Modeling/03_Bidirectional%20LSTM.ipynb)
 - **R² Score**: ~0.61
 - **Strengths**:
   - Captures both past and future dependencies in the data.
