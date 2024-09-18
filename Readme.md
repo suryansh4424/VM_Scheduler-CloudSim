@@ -30,7 +30,7 @@ In this phase, the project focused on collecting and preprocessing the CPU usage
 - Unnecessary columns were removed, and missing values were handled to ensure data quality.
 - Feature engineering was performed by creating a "Next_CPU_Usage" column, shifting the data to model future predictions.
 
-## **3. Modeling:**
+## **3. [Modeling:**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%202/Modeling)
 Models were trained on the preprocessed dataset and evaluated using metrics such as Mean Squared Error (MSE) and R-Squared (R2) score to gauge prediction accuracy.
 Three predictive models were comapred to forecast the CPU usage:
 - Linear Regression
