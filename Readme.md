@@ -37,7 +37,7 @@ Three predictive models were comapred to forecast the CPU usage:
 - Gated Recurrent Unit (GRU)
 - Bidirectional LSTM
   
-### 1. [**Linear Regression**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase1/Modeling/01_Linear%20Regression.ipynb)
+### 1. [**Linear Regression**](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase%202/Modeling/01_Linear%20Regression.ipynb)
 - **R² Score**: ~0.62
 - **Strengths**:
   - Simple and easy to implement.
