@@ -17,59 +17,62 @@ The objective of this project is to address these challenges by leveraging AI/ML
 This predictive model will be benchmarked against traditional heuristic approaches, which use pre-existing information to guide VM scheduling decisions. The comparison will focus on the effectiveness of workload predictions in minimizing scheduling overhead and achieving a more balanced server state, as well as the system’s ability to adapt to fluctuations in demand. The ultimate goal is to demonstrate that AI/ML-driven scheduling can not only enhance resource utilization but also significantly improve the overall performance and sustainability of cloud computing environments.
 
 
-## Phase 1: Dataset and Modeling
+# Phase 1: Dataset and Modeling
 
 In this phase, the project focused on collecting and preprocessing the CPU usage data, followed by the development of predictive models to forecast future CPU workloads. The steps undertaken in this phase are outlined below:
 
-**1. Data Collection:**
+## **1. Data Collection:**
 - CPU usage data was collected from CloudSim simulations, representing real-world cloud environments.
 - The dataset originally consist of 348 files, each containing 288 CPU usage values. These files were merged into a single dataset with over 100,000 data points to facilitate comprehensive modeling.
 
-**2. Data Preprocessing:**
+## **2. Data Preprocessing:**
 - The raw data was cleaned and consolidated into a single dataset for easier analysis.
 - Unnecessary columns were removed, and missing values were handled to ensure data quality.
 - Feature engineering was performed by creating a "Next_CPU_Usage" column, shifting the data to model future predictions.
 
-**3. Modeling:**
+## **3. Modeling:**
 Models were trained on the preprocessed dataset and evaluated using metrics such as Mean Squared Error (MSE) and R-Squared (R2) score to gauge prediction accuracy.
 Three predictive models were comapred to forecast the CPU usage:
 - Linear Regression
 - Gated Recurrent Unit (GRU)
 - Bidirectional LSTM
-
-
-A. Linear Regression
-- R² Score: ~0.62
-
-_Strengths:_
-- Simple and easy to implement.
-- Fast training and prediction times.
-- Comparable accuracy to complex models.
   
-_Weaknesses:_
-- Assumes a linear relationship, which may not capture the complexity of CPU usage patterns.
+### 1. **Linear Regression**
+- **R² Score**: ~0.62
+- **Strengths**:
+  - Simple and easy to implement.
+  - Fast training and prediction time.
+  - Comparable accuracy to more complex models.
+- **Weaknesses**:
+  - Assumes linear relationships, which may not fully capture complex patterns.
 
-B. GRU (Gated Recurrent Unit)
-- R² Score: ~0.62
+---
 
-_Strengths:_
-- Captures long-term temporal dependencies.
-- Less complex than LSTM, offering faster performance with similar results.
-  
-_Weaknesses:_
-- Slower and more resource-intensive compared to Linear Regression.
-- No significant accuracy improvement over simpler models.
+### 2. **GRU (Gated Recurrent Unit)**
+- **R² Score**: ~0.62
+- **Strengths**:
+  - Captures temporal dependencies in time series data.
+  - Faster and less complex than LSTM.
+- **Weaknesses**:
+  - Longer training time compared to Linear Regression.
+  - Minimal improvement in accuracy over simpler models.
 
-C. Bidirectional LSTM (Long Short-Term Memory)
-- R² Score: ~0.61
+---
 
-_Strengths:_
-- Captures both past and future dependencies in time series data.
-- Effective for complex temporal patterns.
-  
-_Weaknesses:_
-- High computational overhead and slower training times.
-- No notable accuracy improvement over simpler models like Linear Regression or GRU.
+### 3. **Bidirectional LSTM**
+- **R² Score**: ~0.61
+- **Strengths**:
+  - Captures both past and future dependencies in the data.
+  - Good for handling complex time series patterns.
+- **Weaknesses**:
+  - High computational cost and slower training time.
+  - No significant accuracy improvement over simpler models.
 
-**4. Results:**
+---
+
+### Conclusion
+- **Linear Regression** was selected as the primary model due to its simplicity, faster training time, and comparable performance to more complex models like **GRU** and **Bidirectional LSTM**.
+
+
+## **4. Results:**
 - The models were compared based on their ability to predict the next 10 CPU usage values. The evaluation metrics indicated that the Random Forest model provided the best performance, but further optimization is required to improve accuracy.
