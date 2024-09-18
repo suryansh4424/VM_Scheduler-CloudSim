@@ -75,4 +75,4 @@ Three predictive models were comapred to forecast the CPU usage:
 
 
 ## **4. Results:**
-- The models were compared based on their ability to predict the next 10 CPU usage values. The evaluation metrics indicated that the Random Forest model provided the best performance, but further optimization is required to improve accuracy.
+- The models were compared based on their ability to predict the next 10 CPU usage values. The evaluation metrics indicated that the simple **Linear Regression** model provided the best performance, but further optimization is required to improve accuracy.
