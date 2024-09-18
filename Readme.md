@@ -45,7 +45,7 @@ _Strengths:_
 - Simple and easy to implement.
 - Fast training and prediction times.
 - Comparable accuracy to complex models.
-- 
+  
 _Weaknesses:_
 - Assumes a linear relationship, which may not capture the complexity of CPU usage patterns.
 
@@ -55,7 +55,7 @@ B. GRU (Gated Recurrent Unit)
 _Strengths:_
 - Captures long-term temporal dependencies.
 - Less complex than LSTM, offering faster performance with similar results.
-- 
+  
 _Weaknesses:_
 - Slower and more resource-intensive compared to Linear Regression.
 - No significant accuracy improvement over simpler models.
@@ -66,7 +66,7 @@ C. Bidirectional LSTM (Long Short-Term Memory)
 _Strengths:_
 - Captures both past and future dependencies in time series data.
 - Effective for complex temporal patterns.
-- 
+  
 _Weaknesses:_
 - High computational overhead and slower training times.
 - No notable accuracy improvement over simpler models like Linear Regression or GRU.
