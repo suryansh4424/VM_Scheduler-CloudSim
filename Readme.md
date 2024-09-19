@@ -16,7 +16,7 @@ The objective of this project is to address these challenges by leveraging AI/ML
 
 This predictive model will be benchmarked against traditional heuristic approaches, which use pre-existing information to guide VM scheduling decisions. The comparison will focus on the effectiveness of workload predictions in minimizing scheduling overhead and achieving a more balanced server state, as well as the system’s ability to adapt to fluctuations in demand. The ultimate goal is to demonstrate that AI/ML-driven scheduling can not only enhance resource utilization but also significantly improve the overall performance and sustainability of cloud computing environments.
 
-# Phase 1: Data Analysis and Insight
+# [Phase 1](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%201): Data Analysis and Insight
 
 To gather, prepare, and analyze the dataset to understand the CPU usage patterns. This will provide foundational insights for building predictive models and optimizing resource scheduling in subsequent phases.
 
@@ -45,7 +45,7 @@ This analysis helped in visualizing CPU load distribution throughout the day and
 ## **4. Results:**
 The analysis revealed that the peak CPU usage occurred at Hour X, with an average CPU utilization of Y%.
 
-# Phase 2: Model Development and Evaluation
+# [Phase 2](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%202): Model Development and Evaluation
 
 To develop, evaluate, and refine machine learning models aimed at predicting CPU usage and optimizing scheduling strategies based on the insights gained from Phase 1 outlined below:
 
@@ -54,7 +54,7 @@ To develop, evaluate, and refine machine learning models aimed at predicting CPU
 - Unnecessary columns were removed, and missing values were handled to ensure data quality.
 - Feature engineering was performed by creating a "Next_CPU_Usage" column, shifting the data to model future predictions.
 
-## **2. Modeling:
+## **2. Modeling:**
 Models were trained on the preprocessed dataset and evaluated using metrics such as Mean Squared Error (MSE) and R-Squared (R2) score to gauge prediction accuracy.
 Three predictive models were comapred to forecast the CPU usage:
 - Linear Regression
