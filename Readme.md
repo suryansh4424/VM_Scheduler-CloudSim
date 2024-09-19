@@ -16,21 +16,45 @@ The objective of this project is to address these challenges by leveraging AI/ML
 
 This predictive model will be benchmarked against traditional heuristic approaches, which use pre-existing information to guide VM scheduling decisions. The comparison will focus on the effectiveness of workload predictions in minimizing scheduling overhead and achieving a more balanced server state, as well as the system’s ability to adapt to fluctuations in demand. The ultimate goal is to demonstrate that AI/ML-driven scheduling can not only enhance resource utilization but also significantly improve the overall performance and sustainability of cloud computing environments.
 
+# Phase 1: Data Analysis and Insight
 
-# Phase 1: Dataset and Modeling
-
-In this phase, the project focused on collecting and preprocessing the CPU usage data, followed by the development of predictive models to forecast future CPU workloads. The steps undertaken in this phase are outlined below:
+To gather, prepare, and analyze the dataset to understand the CPU usage patterns. This will provide foundational insights for building predictive models and optimizing resource scheduling in subsequent phases.
 
 ## **1. Data Collection:**
 - CPU usage data was collected from CloudSim simulations, representing real-world cloud environments.
 - The dataset originally consist of 348 files, each containing 288 CPU usage values. These files were merged into a single dataset with over 100,000 data points to facilitate comprehensive modeling.
 
-## **2. Data Preprocessing:**
+## **2. Data Preparation:**
+### **Column Standardization:**
+- Ensured consistency in column naming conventions, with Timestamp and CPU_Usage being cleaned and standardized for easier manipulation.
+
+### **Timestamp Formatting:**
+- Converted the Timestamp data into a proper datetime format (%d-%m-%Y %H:%M), ensuring correct interpretation of date and time values.
+
+### **Feature Engineering:**
+- Extracted the Hour from each timestamp to analyze CPU usage patterns on an hourly basis.
+
+## **3. Data Analysis:**
+### **Hourly CPU Usage Calculation:**
+- The dataset was grouped by the hour of the day to compute the average CPU usage for each hour.
+This analysis helped in visualizing CPU load distribution throughout the day and identifying periods of peak and low usage.
+
+### **Peak Usage Identification:**
+- By calculating the average CPU usage per hour, the peak hour (the hour with the highest average CPU load) was determined, providing insight into the time of day when system resources are most strained.
+
+4. Results:
+The analysis revealed that the peak CPU usage occurred at Hour X, with an average CPU utilization of Y%.
+
+# Phase 2: Model Development and Evaluation
+
+To develop, evaluate, and refine machine learning models aimed at predicting CPU usage and optimizing scheduling strategies based on the insights gained from Phase 1 outlined below:
+
+## **1. Data Preprocessing:**
 - The raw data was cleaned and consolidated into a single dataset for easier analysis.
 - Unnecessary columns were removed, and missing values were handled to ensure data quality.
 - Feature engineering was performed by creating a "Next_CPU_Usage" column, shifting the data to model future predictions.
 
-## **3. [Modeling:](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%202/Modeling)**
+## **2. Modeling:
 Models were trained on the preprocessed dataset and evaluated using metrics such as Mean Squared Error (MSE) and R-Squared (R2) score to gauge prediction accuracy.
 Three predictive models were comapred to forecast the CPU usage:
 - Linear Regression
@@ -74,5 +98,5 @@ Three predictive models were comapred to forecast the CPU usage:
 - **Linear Regression** was selected as the primary model due to its simplicity, faster training time, and comparable performance to more complex models like **GRU** and **Bidirectional LSTM**.
 
 
-## **4. Results:**
+## **3. Results:**
 - The models were compared based on their ability to predict the next 10 CPU usage values. The evaluation metrics indicated that the simple **Linear Regression** model provided the best performance, but further optimization is required to improve accuracy.
