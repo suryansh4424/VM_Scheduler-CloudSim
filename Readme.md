@@ -42,7 +42,7 @@ This analysis helped in visualizing CPU load distribution throughout the day and
 ### **Peak Usage Identification:**
 - By calculating the average CPU usage per hour, the peak hour (the hour with the highest average CPU load) was determined, providing insight into the time of day when system resources are most strained.
 
-4. Results:
+## **4. Results:**
 The analysis revealed that the peak CPU usage occurred at Hour X, with an average CPU utilization of Y%.
 
 # Phase 2: Model Development and Evaluation
