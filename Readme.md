@@ -43,7 +43,7 @@ This analysis helped in visualizing CPU load distribution throughout the day and
 - By calculating the average CPU usage per hour, the peak hour (the hour with the highest average CPU load) was determined, providing insight into the time of day when system resources are most strained.
 
 ## **4. Results:**
-The analysis revealed that the peak CPU usage occurred at Hour X, with an average CPU utilization of Y%.
+The [CPU usage analysis](https://github.com/suryansh4424/VM_Scheduler-CloudSim/blob/main/Phase%201/CPU_usage_analysis.ipynb) revealed that the peak CPU usage occurred at Hour X, with an average CPU utilization of Y%.
 
 # [Phase 2](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%202): Model Development and Evaluation
 
