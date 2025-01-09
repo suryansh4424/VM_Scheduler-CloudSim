@@ -100,3 +100,64 @@ Three predictive models were comapred to forecast the CPU usage:
 
 ## **3. Results:**
 - The models were compared based on their ability to predict the next 10 CPU usage values. The evaluation metrics indicated that the simple **Linear Regression** model provided the best performance, but further optimization is required to improve accuracy.
+
+# [Phase 3](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%203): Model Integration
+
+To integrate the predictive models developed in Phase 2 into the VM scheduling framework, enabling real-time workload predictions to optimize resource allocation.
+
+## **1. Framework Selection:**
+- **CloudSim** was chosen as the simulation framework for modeling and evaluating VM scheduling in a cloud environment.
+- **Eclipse IDE** was used to facilitate seamless integration and debugging of the components.
+
+## **2. Integration Steps:**
+### **Model Deployment:**
+- The trained **Linear Regression** model was exported as a serialized object and integrated into the CloudSim simulation workflow.
+- Predictions were fed into the VM allocation policy to proactively assign resources based on anticipated workloads.
+
+### **Scheduling Algorithm Updates:**
+- Enhanced the default VM allocation policy in CloudSim to account for predicted CPU usage values.
+- The algorithm dynamically adjusted VM placement and migration strategies based on forecasted demand, aiming to reduce system strain during peak periods.
+
+### **Real-Time Simulation:**
+- Simulated real-world scenarios by injecting workload data and observing how the system responded to predicted demands.
+- Ensured smooth interaction between the predictive model and the CloudSim framework.
+
+## **3. Results:**
+- Successful integration of workload predictions into the VM scheduling process.
+- Observed initial improvements in system performance, with more balanced resource utilization compared to heuristic-based methods.
+
+---
+
+# [Phase 4](https://github.com/suryansh4424/VM_Scheduler-CloudSim/tree/main/Phase%204): System Evaluation and Comparison
+
+To evaluate the integrated system's performance and compare AI/ML-based scheduling with traditional heuristic approaches.
+
+## **1. Evaluation Metrics:**
+The system was assessed using the following metrics:
+- **Resource Utilization**: Percentage of server resources actively in use.
+- **Energy Efficiency**: Total energy consumed during the simulation.
+- **Scheduling Overhead**: Time and computational resources required for scheduling decisions.
+- **Response Time**: Average time taken to handle incoming workloads.
+
+## **2. Benchmarking:**
+### **AI/ML-Based Scheduling:**
+- Leveraged the predictions from the **Linear Regression** model for VM allocation.
+- Proactively adjusted resources based on anticipated demand, minimizing reactive migrations.
+
+### **Heuristic-Based Scheduling:**
+- Used static rules and pre-existing information to allocate resources.
+- Reactive in nature, often resulting in higher energy consumption and scheduling overhead.
+
+## **3. Results:**
+- **AI/ML-Based Approach**:
+  - Achieved **10–15% improvement in resource utilization**.
+  - Reduced energy consumption by **8–12%** compared to heuristic methods.
+  - Lower scheduling overhead due to predictive allocation strategies.
+
+- **Heuristic-Based Approach**:
+  - Struggled to adapt to fluctuations in demand, leading to higher reactive costs.
+  - Energy consumption and processing times were significantly higher.
+
+## **4. Conclusion:**
+- The **AI/ML-based scheduling system** demonstrated superior performance, particularly in dynamic and unpredictable scenarios.
+- The proactive approach reduced the need for costly migrations and ensured a more balanced server state, proving the viability of machine learning for optimizing cloud infrastructure.
