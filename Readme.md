@@ -6,7 +6,7 @@ VM-2=>N\
 VM-3=>N\
 ..\
 ..\
-VM-M=>N
+VM-M=>N.
 
 the problem becomes exponentially complex, with a total of M^N possible configurations. This combinatorial nature renders VM scheduling an NP-hard problem, making it challenging to achieve optimal resource utilization.
 
